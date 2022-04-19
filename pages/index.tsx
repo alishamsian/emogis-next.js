@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       </h1>
       <div className="flex items-center justify-center">
       <input
-        className="w-full max-w-xl border border-gray-300 p-3 rounded-md my-8 bg-white shadow-md focus:outline-none focus:border-cyan-500 focus:ring-1"
+        className="w-full placeholder:text-right max-w-xl border border-gray-300 p-3 rounded-md my-8 bg-white shadow-md focus:outline-none focus:border-cyan-500 focus:ring-1"
         type={"text"}
         id="name"
         placeholder="اموجی موردنظر را سرچ کنید"
