@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Vazirmatn", "sans-serif"],
+        sans: ["Roboto", "sans-serif"],
+        sans: ["Vazirmatn", "sans-serif"]
       }
     },
   },

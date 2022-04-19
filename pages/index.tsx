@@ -1,13 +1,20 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Layout from '../components/Layout'
+import type { NextPage } from "next";
+import EmojiCard from "../components/EmojiCard";
+import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <h1 className=" bg-slate-700 text-white p-3">ali shamsian welcome</h1>
+      <EmojiCard
+        emoji="😀"
+        name="ali"
+        code="1F600"
+        category={"Smileys & Emotion (face-smiling)"}
+        group={"Smileys & Emotion"}
+        subgroup="face-smiling"
+      />
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
