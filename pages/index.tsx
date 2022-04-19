@@ -1,18 +1,14 @@
 import type { NextPage } from "next";
 import EmojiCard from "../components/EmojiCard";
 import Layout from "../components/Layout";
+import List from "../components/List";
+import emojisData from "../data/emojis";
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <EmojiCard
-        emoji="😀"
-        name="ali"
-        code="1F600"
-        category={"Smileys & Emotion (face-smiling)"}
-        group={"Smileys & Emotion"}
-        subgroup="face-smiling"
-      />
+      <h1 className="text-2xl md:text-5xl font-bold text-gray-600 text-center tracking-wide">خوش اومدین به اموجی لند</h1>
+     <List emojis={emojisData.slice(0, 100)} />
     </Layout>
   );
 };
