@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import CategoryCard from "../components/categoryCard";
+import CategoryCard from "../components/CategoryCard";
 import EmojiCard from "../components/EmojiCard";
 import Layout from "../components/Layout";
 import List from "../components/List";
@@ -19,7 +19,7 @@ const Home: NextPage = () => {
     )
   }
 
-  const handleFilterSearch = (search: string) => {
+  const handleFilterBySearch = (search: string) => {
     if (search.trim().length > 0) {
       setFilteredEmojis(
         emojisData.filter((emoji) => 
@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         type={"text"}
         id="name"
         placeholder="اموجی موردنظر را سرچ کنید"
-        onChange={(e) => handleFilterSearch(e.target.value)}
+        onChange={(e) => handleFilterBySearch(e.target.value)}
       />
       </div>
       
