@@ -15,12 +15,12 @@ const CategoryCard: React.FunctionComponent<categoryProps> = ({
     <>
       <button
         onClick={() => handleFilter(group)}
-        className="flex items-baseline justify-start pl-7 rounded-md bg-gray-50 py-2 hover:bg-gray-100"
+        className="flex items-baseline justify-end pr-7 rounded-md bg-gray-50 py-2 hover:bg-gray-100 text-left"
       >
-        <span className="text-xl mr-2" role={"img"} aria-label={emoji}>
+        <p>{group}</p>
+        <span className="text-xl ml-2" role={"img"} aria-label={emoji}>
           {emoji}
         </span>
-        <p>{group}</p>
       </button>
     </>
   );

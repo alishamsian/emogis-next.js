@@ -93,7 +93,7 @@ const Home: NextPage = () => {
               group="پرچم ها"
             />
       </div>
-      <List emojis={filteredEmojis.slice(0, 100)} />
+      <List emojis={filteredEmojis.slice(0, 200)} />
     </Layout>
   );
 };
